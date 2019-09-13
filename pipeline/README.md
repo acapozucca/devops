@@ -9,7 +9,7 @@ Laptop with at least 8 Gb memory (recommended 16 Gb, ideally 32 Gb)
 ### Software
 1. Maven is installed (v 3.6.2)
 
-* Check installation with the command 'mvn -version'
+* Check installation with the command `mvn -version`
 
 
 
@@ -20,7 +20,7 @@ Laptop with at least 8 Gb memory (recommended 16 Gb, ideally 32 Gb)
 3. Vagrant (v 2.2.5) 
 * Instructions to install here: https://www.vagrantup.com/downloads.html
 * (only if using Windows 10 or Windows 8 Pro) Disable Hyper-V, see instructions to disable here: https://www.poweronplatforms.com/enable-disable-hyper-v-windows-10-8/
-* Check installation with the command 'vagrant -v'
+* Check installation with the command `vagrant -v`'
 
 
 
