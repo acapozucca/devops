@@ -39,3 +39,41 @@ Laptop with at least 8 Gb memory (recommended 16 Gb, ideally 32 Gb)
 
 ### 1- Create walking skeleton
 
+#### Info
+The example to use is “Hello world” made in java.
+
+This example is created with the command:
+
+`mvn archetype:generate -DgroupId=com.jcg.maven -DartifactId=MavenHelloWorldProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false`
+
+*Note:* Using maven to create the basic example eases the creation of the single unit test. 
+
+
+#### Build, Test, and Run
+
+
+1- Get to the working directory
+`cd ~/<git_root_folder>/devops/pipeline/s1-create-skeleton/MavenHelloWorldProject`
+
+2- Build process: create the “binaries”
+`mvn compile`
+
+3- Unit test process: create and run a single unit test that asserts “true” 
+`mvn test`
+
+4- Package the example in a .jar file
+`mvn install`
+
+5- Run the packaged version
+`java -jar target/MavenHelloWorldProject-1.0-SNAPSHOT.jar`
+
+
+
+
+
+
+
+
+
+
+
