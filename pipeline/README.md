@@ -7,8 +7,8 @@
 Laptop with at least 8 Gb memory (recommended 16 Gb, ideally 32 Gb)
 
 ### Software
-1. Maven is installed (v 3.6.2)
-
+1. Maven (v 3.6.2)
+* Instructions to install here: https://maven.apache.org/download.cgi
 * Check installation with the command `mvn -version`
 
 
