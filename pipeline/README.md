@@ -27,7 +27,7 @@ Laptop with at least 8 Gb memory (recommended 16 Gb, ideally 32 Gb)
 ## Recommended Workflow
 
 ### Summary
-1. [Create walking skeleton](/s1-create-skeleton/README.md)
+1. [Create walking skeleton](./s1-create-skeleton/README.md)
 2. Automate build process
 3. Automate deployment process
 4. Automate Integration Tests
