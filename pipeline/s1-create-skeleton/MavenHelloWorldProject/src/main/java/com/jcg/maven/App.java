@@ -6,8 +6,19 @@ package com.jcg.maven;
  */
 public class App 
 {
+	
+	
+	
+	public void method1()
+    {
+        System.out.println("Hello World!");
+    }
+	
+	
+	
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        App app = new App();
+        app.method1();
     }
 }
