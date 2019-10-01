@@ -7,7 +7,7 @@ This example is created with the command:
 
 `mvn archetype:generate -DgroupId=com.jcg.maven -DartifactId=MavenHelloWorldProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false`
 
-**Note:*** Using maven to create the basic example eases the creation of the single unit test. 
+**Note:** Using maven to create the basic example eases the creation of the single unit test. 
 
 
 ## Build, Test, and Run
