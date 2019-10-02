@@ -11,8 +11,7 @@
 
 ## Create integration server
 
-The goal is to create a VM that acts as integration server.
-
+The goal is to create a VM that acts as integration server. <br>
 At this stage the integration server should be used to hold a VCS where developers 
 can publish their changes. Moreover, every time a change is detected the build process 
 should be triggered. 
@@ -27,11 +26,13 @@ Vagrant is used to create a VM which acts as integration server.
 `vagrant up`
 
 **Notes**
-The VM is automatically provisioned using Ansible playbooks. 
 
-These playbooks install GitLab and Docker. 
+* The VM is automatically provisioned using Ansible playbooks. 
 
-GitLab is used as VCS and CI, whereas Docker is used to handle the integration environments.
+* These playbooks install GitLab and Docker. 
+
+* GitLab is used as VCS and CI, whereas Docker is used to handle the integration environments.
+
 
 **Excerise**
  
