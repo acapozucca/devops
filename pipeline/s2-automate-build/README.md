@@ -164,6 +164,13 @@ has to:
 ### 5.1-GitLab Runner setup
 
 
+
+
+
+
+
+
+
 ### 5.2- Create GitLab CI
 
 1- Create file named .gitlab-ci.yml at the root of the repository.
@@ -177,7 +184,6 @@ stages:
   - build
   - test
   - run
-  - deploy
 
 cache:
   paths:
@@ -200,6 +206,49 @@ run_app:
     - mvn exec:java -Dexec.mainClass="com.jcg.maven.App"
 
 ```
+
+**Excerise**
+ 
+* Use GtiLab to analyse what's going one.
+
+** What has just happened?
+
+** Try to run again the CI and inspect the intermediate results of each stage.
+
+** Where is the .jar file generated as result of the build?
+
+
+3- Storing the "binary"
+
+The last step of the automatic build is to store the resulting artefact such that it 
+can be accessed by the team. 
+
+Add to the file .gitlab-ci.yml the lines
+
+`- deploy` 
+
+after run in the stages section, and
+
+add at the bottom of the file the following block
+
+```
+
+deploy_app:
+    stage: deploy
+    script:
+    - echo "Deploy review app"
+    artifacts:
+        name: "my-app"
+        paths:
+        - target/*.jar
+        
+```
+	
+
+**Excerise**
+ 
+* Find out what is the result of this modification.<br>
+**Tip:** have a look on the CI/CD -> Pipelines of the project.
 
 
 
