@@ -100,8 +100,8 @@ Password: $YOUR_PASSWORD<br>
 
 ## Configure Docker
 
-The objective of this step is to be able to use the CLI with the current user ($YOUR_USERNAME = vagrant), as the basic
-docker daemon and docker CLI have been already installed on the VM upon starting (via provisioning).
+The objective of this step is to be able to use the CLI with the current user ($YOUR_USERNAME = vagrant).<br>
+Notice that the basic docker daemon and docker CLI have been already installed on the VM upon starting (via provisioning).
 
 1- Add a user to the docker group ot be able to access the docker CLI
 
