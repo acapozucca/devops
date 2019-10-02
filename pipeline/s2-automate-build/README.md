@@ -161,7 +161,29 @@ has to:
 
 
 
-### 5.1-GitLab Runner setup
+### 5.1 [GitLab Runner](https://docs.gitlab.com/runner/) setup
+
+
+
+#### 5.1.1 Install Git Lab Runner
+
+Ensure you are in the directory<br>
+`~/<git_root_folder>/devops/pipeline/s2-automate-build/integration-server`
+
+Then ssh to the VM by doing
+
+`vagrant ssh`
+
+Once you have entered into the VM, you need to install the GitLab Runner on the integration server.
+This is done by executing the following commands:
+
+`curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash`
+
+`sudo apt-get install gitlab-runner`
+
+
+
+#### 5.1.2 Register the Runner
 
 
 
@@ -171,7 +193,7 @@ has to:
 
 
 
-### 5.2- Create GitLab CI
+### 5.2 Create GitLab CI
 
 1- Create file named .gitlab-ci.yml at the root of the repository.
 
