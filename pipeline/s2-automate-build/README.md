@@ -20,8 +20,7 @@ should be triggered.
 
 `cd ~/<git_root_folder>/devops/pipeline/s2-automate-build/integration-server`
 
-2- Create VM
-Vagrant is used to create a VM which acts as integration server.
+2- Vagrant is used to create a VM which acts as integration server.
 
 `vagrant up`
 
@@ -34,9 +33,13 @@ Vagrant is used to create a VM which acts as integration server.
 * GitLab is used as VCS and CI, whereas Docker is used to handle the integration environments.
 
 
-**Exercise**
+**Exercises**
+
+* Analyse how the provisioning is done.
+
+* Is there any "qualities" being addressed by the way the provisioning is done? Justify. 
  
-* Add package nmap to the playbook.
+* Add package "nmap" to the playbook.
 
 
 
