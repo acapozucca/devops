@@ -1,0 +1,20 @@
+# vim: ts=2
+---
+- hosts: all
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+    
+  
+  vars:
+    vHome: /home/vagrant
+      
+  tasks:
+
+  - include_role:
+      name: gitlab
+
+  - include_role:
+      name: docker
+
+  
