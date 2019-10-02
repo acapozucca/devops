@@ -86,7 +86,7 @@ Open `http://192.168.33.9/gitlab` in your browser.
 You will be asked to provide a password (refered as $YOUR_PASSWORD later) for the root credentials.
 
 To further login with root the credentials are:<br>
-Login: root<br>  
+Login: root<br>
 Password: $YOUR_PASSWORD<br>
 
  
@@ -127,8 +127,7 @@ The expected output should be.
 
 The goal of this step is to make use of GitLab as a VCS. 
 
-1- Create HelloWorldMaven project (in GitLab a project is a repository)
-
+1- Create HelloWorldMaven project (in GitLab a project is a repository).<br>
 Follow the instructions to create the remote and local repositories.
 
 
@@ -137,8 +136,8 @@ Follow the instructions to create the remote and local repositories.
 
 **Notes:** 
 
-* use the project placed at 
-`cd ~/<git_root_folder>/devops/pipeline/s1-create-skeleton/MavenHelloWorldProject`
+* use the project placed at:<br>
+`~/<git_root_folder>/devops/pipeline/s1-create-skeleton/MavenHelloWorldProject`
 
 * ensure the file `pom.xml` is at the root of the local repository. 
 
@@ -180,7 +179,6 @@ stages:
   - run
   - deploy
 
-
 cache:
   paths:
     - target/
@@ -198,7 +196,7 @@ test_app:
 run_app:
   stage: run
   script:
-    - mvn  package
+    - mvn package
     - mvn exec:java -Dexec.mainClass="com.jcg.maven.App"
 
 ```
