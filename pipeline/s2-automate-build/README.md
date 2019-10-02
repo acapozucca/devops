@@ -196,19 +196,19 @@ For GitLab instance URL enter:<br>
 
 
 For the gitlab-ci token enter the generated token.<br>
-Example: 85y84QhgbyaqWo38b7qg
+`Example: 85y84QhgbyaqWo38b7qg`
 
 For a description for the runner enter:<br>
-[integration-server] my-devops-course-runner
+`[integration-server] my-devops-course-runner`
 
 For the gitlab-ci tags for this runner enter:<br>
-my-tag,another-tag
+`my-tag,another-tag`
 
 For the executor enter:<br>
-docker
+`docker`
 
 For the Docker image (eg. ruby:2.1) enter:<br>
-alpine:latest
+`alpine:latest`
 
 
 3. Restart the runner:
@@ -218,6 +218,10 @@ alpine:latest
 
 4. Finally, in GitLab change the configuration of the runner to accept jobs without TAGS.
 
+
+**Exercise** 
+
+* Analyse what it can be added to the playbooks, and do it.
 
 
 ### 5.2 Create GitLab CI
@@ -258,16 +262,16 @@ run_app:
 
 **Exercise** 
 
-* Use GtiLab to analyse what's going one.
+* Use GtiLab to analyse what has just happened?<br>
+**Tip:** have a look on the CI/CD -> Pipelines of the project.
 
-- What has just happened?
+* Try to run again the CI and inspect the intermediate results of each stage.
 
-- Try to run again the CI and inspect the intermediate results of each stage.
-
-- Where is the .jar file generated as result of the build?
+* Where is the .jar file generated as result of the build?
 
 
-3. Storing the "binary"
+
+### 5.3 Storing the "binary"
 
 The last step of the automatic build is to store the resulting artefact such that it 
 can be accessed by the team. 
