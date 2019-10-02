@@ -211,11 +211,11 @@ run_app:
  
 * Use GtiLab to analyse what's going one.
 
-** What has just happened?
+* * What has just happened?
 
-** Try to run again the CI and inspect the intermediate results of each stage.
+* * Try to run again the CI and inspect the intermediate results of each stage.
 
-** Where is the .jar file generated as result of the build?
+* * Where is the .jar file generated as result of the build?
 
 
 3- Storing the "binary"
