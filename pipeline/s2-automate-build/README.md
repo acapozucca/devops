@@ -34,7 +34,7 @@ Vagrant is used to create a VM which acts as integration server.
 * GitLab is used as VCS and CI, whereas Docker is used to handle the integration environments.
 
 
-**Excerise**
+**Exercise**
  
 * Add package nmap to the playbook.
 
@@ -207,8 +207,8 @@ run_app:
 
 ```
 
-**Excerise**
- 
+**Exercise** 
+
 * Use GtiLab to analyse what's going one.
 
 1. What has just happened?
