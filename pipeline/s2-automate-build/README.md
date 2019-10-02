@@ -245,7 +245,7 @@ deploy_app:
 ```
 	
 
-**Excerise**
+**Exercise**
  
 * Find out what is the result of this modification.<br>
 **Tip:** have a look on the CI/CD -> Pipelines of the project.
