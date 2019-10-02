@@ -167,14 +167,14 @@ has to:
 
 #### 5.1.1 Install Git Lab Runner
 
-Ensure you are in the directory<br>
+1. Ensure you are in the directory<br>
 `~/<git_root_folder>/devops/pipeline/s2-automate-build/integration-server`
 
-Then ssh to the VM by doing
+2. Then ssh to the VM by doing
 
 `vagrant ssh`
 
-Once you have entered into the VM, you need to install the GitLab Runner on the integration server.
+3. Once you have entered into the VM, you need to install the GitLab Runner on the integration server.
 This is done by executing the following commands:
 
 `curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash`
@@ -185,19 +185,46 @@ This is done by executing the following commands:
 
 #### 5.1.2 Register the Runner
 
+1. First of all, you need to execute the following command:
+
+`sudo gitlab-runner register`
+
+2. Then enter the requested information as follows:
+
+For GitLab instance URL enter:<br>
+`http://192.168.33.9/gitlab/`
 
 
+For the gitlab-ci token enter the generated token.<br>
+Example: 85y84QhgbyaqWo38b7qg
+
+For a description for the runner enter:<br>
+[integration-server] my-devops-course-runner
+
+For the gitlab-ci tags for this runner enter:<br>
+my-tag,another-tag
+
+For the executor enter:<br>
+docker
+
+For the Docker image (eg. ruby:2.1) enter:<br>
+alpine:latest
 
 
+3. Restart the runner:
 
+`sudo gitlab-runner restart`
+
+
+4. Finally, in GitLab change the configuration of the runner to accept jobs without TAGS.
 
 
 
 ### 5.2 Create GitLab CI
 
-1- Create file named .gitlab-ci.yml at the root of the repository.
+1. Create file named .gitlab-ci.yml at the root of the repository.
 
-2- Add the following lines into the file:
+2. Add the following lines into the file:
 
 ```
 image: maven:latest
@@ -233,25 +260,23 @@ run_app:
 
 * Use GtiLab to analyse what's going one.
 
-1. What has just happened?
+- What has just happened?
 
-2. Try to run again the CI and inspect the intermediate results of each stage.
+- Try to run again the CI and inspect the intermediate results of each stage.
 
-3. Where is the .jar file generated as result of the build?
+- Where is the .jar file generated as result of the build?
 
 
-3- Storing the "binary"
+3. Storing the "binary"
 
 The last step of the automatic build is to store the resulting artefact such that it 
 can be accessed by the team. 
 
-Add to the file .gitlab-ci.yml the lines
+Add to the file .gitlab-ci.yml (in the stages section, afer "- run") the line:
 
 `- deploy` 
 
-after run in the stages section, and
-
-add at the bottom of the file the following block
+and, add at the bottom of the file the following block
 
 ```
 
