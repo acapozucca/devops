@@ -1,0 +1,12 @@
+---
+- hosts: all
+  remote_user: vagrant
+  become: yes
+  tasks:
+    - package:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - wget
+        - vim
+        - python-pip
