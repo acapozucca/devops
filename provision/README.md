@@ -32,7 +32,7 @@ Run the following command:
 
 `ssh-keygen`
 
-**Notes:***<br>
+**Notes:**<br>
 - Use `id_rsa_devops_course` as file name for the id_rsa
 - Leave passphrase empty (i.e. no password)
 
