@@ -4,6 +4,7 @@
 ## Objectives
 
 The objectives are:
+- to get native ssh access to a VM created with Vagrant.
 - to provision a VM with basic services using Ansible.
 
 
@@ -31,7 +32,7 @@ Run the following command:
 
 `ssh-keygen`
 
-*Notes:*<br>
+**Notes:***<br>
 - Use `id_rsa_devops_course` as file name for the id_rsa
 - Leave passphrase empty (i.e. no password)
 
