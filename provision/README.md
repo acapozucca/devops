@@ -20,13 +20,13 @@ The objectives are:
 
 ## Tasks
 
-1. Get to the working directory
+### 1. Get to the working directory
 
 `cd ~/<git_root_folder>/devops/provision`
 
 
 
-2. Generate ssh key pair (if not already done)
+### 2. Generate ssh key pair (if not already done)
 
 Run the following command:
 
@@ -37,7 +37,7 @@ Run the following command:
 - Leave passphrase empty (i.e. no password)
 
 
-3. Move keys to the directory `~/.ssh/` on host.
+### 3. Move keys to the directory `~/.ssh/` on host.
 
 
 4. Add to the `~/.ssh/config` file on host
