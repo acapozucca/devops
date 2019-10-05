@@ -115,7 +115,7 @@ Notice that the basic docker daemon and docker CLI have been already installed o
 
 The expected output should be.
 
-`Hello from Docker!``
+`Hello from Docker!`
 
 3- Remove the docker container and image:
 
