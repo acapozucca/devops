@@ -94,7 +94,8 @@ Password: $YOUR_PASSWORD<br>
 
  
    
-**Note:** Upon starting the service up yet another user is requested to be created.
+**Note:** Upon starting the service up yet another user is requested to be created. 
+Keep the credentials of this new user, as you'll need it for creating repositories.
 
 
 
@@ -138,6 +139,8 @@ Follow the instructions to create the remote and local repositories.
 
 
 **Notes:** 
+
+* do NOT use the GitLab's root user to create the repo and to push to it<br>
 
 * use the project placed at:<br>
 `~/<git_root_folder>/devops/pipeline/s1-create-skeleton/MavenHelloWorldProject`
