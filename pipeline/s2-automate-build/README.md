@@ -205,7 +205,7 @@ For a description for the runner enter:<br>
 `[integration-server] my-devops-course-runner`
 
 For the gitlab-ci tags for this runner enter:<br>
-`my-tag,another-tag`
+`devops-course,helloworld`
 
 For the executor enter:<br>
 `docker`
