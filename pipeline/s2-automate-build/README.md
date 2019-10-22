@@ -94,9 +94,12 @@ Password: $YOUR_PASSWORD<br>
 
  
    
-**Note:** Upon starting the service up yet another user is requested to be created. 
+**Notes:** 
+
+* Upon starting the service up yet another user is requested to be created. 
 Keep the credentials of this new user, as you'll need it for creating repositories.
 
+* In case you need to reset the password of a GitLab user follow the instructions given in this [link] (https://docs.gitlab.com/ee/security/reset_root_password.html)
 
 
 ## Configure Docker
