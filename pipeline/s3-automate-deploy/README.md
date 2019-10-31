@@ -131,7 +131,7 @@ scp /home/vagrant/artefact-repository/$1 vagrant@$2:/home/vagrant/stage
 `./deploy-proc.sh MavenHelloWorldProject-1.0-SNAPSHOT.jar stage-vm`
 
 
-8. Check file is copied into the `stage-vm` VM, in `/home/vagrant/stage` directory.
+8. Check file is copied into the stage-vm VM, in /home/vagrant/stage directory.
 
 
 
@@ -141,7 +141,7 @@ scp /home/vagrant/artefact-repository/$1 vagrant@$2:/home/vagrant/stage
 
 Deploy directly the candidate into the stage environment.
 
-1. Create a GitLab runner (with executor `shell`) on the `stage-vm` server. 
+1. Create a GitLab runner (with executor "shell") on the stage-vm server. 
 
 *Notes:*<br>
 - Use `[stage-vm] shell` for description
@@ -153,7 +153,7 @@ Deploy directly the candidate into the stage environment.
 `sudo usermod -dG vagrant gitlab-runner`
 
 
-3. Change the .gitlab-ci.yml file such that the `deploy` job looks like:
+3. Change the .gitlab-ci.yml file such that the deploy job looks like:
 
 ```
 
@@ -168,7 +168,7 @@ deploy:
 ```
 
 
-4. Check the candidate appears into the `/home/vagrant/stage` directory of the `stage-vm` machine.
+4. Check the candidate appears into the /home/vagrant/stage directory of the stage-vm machine.
 
 
 
