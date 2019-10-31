@@ -108,9 +108,11 @@ deploy:
 - The directory `/home/vagrant/stage` is the target place to deploy the file
 - A ssh key pair has to be set among `integration-server` and `stage-vm` for vagrant user. This allows not to enter password when connecting through ssh.
 
+5.1. Create script
 
 `vim deploy-proc.sh`
 
+5.2. Content of the script
 
 ```
 #!/bin/bash
