@@ -3,3 +3,4 @@ target/
 *log
 *.retry
 *.BK
+data/

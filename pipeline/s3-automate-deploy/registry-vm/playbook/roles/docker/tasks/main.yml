@@ -1,0 +1,54 @@
+---
+
+- name: Update repositories cache. 
+  apt:
+    update_cache: yes
+
+
+- name: Safe system upgrade via aptitude.
+  apt: 
+    upgrade: safe
+
+
+- name: Install packages required by Docker.
+  apt:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - gnupg2
+    - software-properties-common
+
+- name:  Add Docker key to the list of trusted APT keys.
+  shell: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+  args:
+    executable: /bin/bash
+    warn: False
+
+  
+- name: Add docker to APT repo. 
+  shell: add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  #ignore_errors: True    
+
+
+- name: Update repositories cache. 
+  apt:
+    update_cache: yes    
+
+    
+- name: Install Docker packages. 
+  apt:
+    name: "{{ dockerpackages }}"
+  vars:
+    dockerpackages:
+    - docker-ce 
+    - docker-ce-cli
+    - containerd.io
+    
+    
+- name: Add users to docker group. 
+  shell: "usermod -aG docker {{ item }}"
+  with_items:
+    - vagrant
