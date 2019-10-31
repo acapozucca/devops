@@ -1,22 +1,22 @@
-# 2- Automate deployment process
+# 3- Automate deployment process
 
 
 ## Assumptions/Pre-requisites
 
 1. The integration server configured in [automate build process](../s2-automate-build/README.md) is up and running.
 
-2. A virtual machine (VM) named `stage-vm` is up and running.
+2. A virtual machine (VM) named stage-vm is up and running.
 
 *Notes:*<br>
-- The `Vagrantfile` required to create and run the `stage-vm` VM is provided in this repo. See inside directory:<br>
+- The Vagrantfile required to create and run the stage-vm VM is provided in this repo. See inside directory:<br>
 
-``cd ~/<git_root_folder>/devops/pipeline/s3-automate-deploy/stage-vm``
+`cd ~/<git_root_folder>/devops/pipeline/s3-automate-deploy/stage-vm`
 
 
 
 ## Deploy on a stage environment 
 
-The objective is to deploy the candidate for the `MavenHelloWorldProject` (used in the previous steps of the tutorial) into a deploy environment.
+The objective is to deploy the candidate for the MavenHelloWorldProject (used in the previous steps of the tutorial) into a deploy environment.
 
 
 ### Strategy 1
@@ -25,11 +25,11 @@ First deploy the candidate on a artefact repository on the integration server, a
 
 1. Create directory `/home/vagrant/artefact-repository` on the integration server.
 
-2. Change rights to directory `artefact-repository`
+2. Change rights of directory artefact-repository
 
 `chmod 777 artefact-repository/`
 
-3. Create a GitLab runner (with executor `shell`) on the integration server. 
+3. Create a GitLab runner (with executor "shell"") on the integration server. 
 
 *Notes:*<br>
 - Use `[integration-server] shell` for description
