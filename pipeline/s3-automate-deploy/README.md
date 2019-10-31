@@ -172,17 +172,6 @@ deploy:
 
 
 
-## Deploy on a docker registry 
-
-
-
-
-
-
-
-
-
-
 
 
 
