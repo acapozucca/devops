@@ -29,7 +29,7 @@ First deploy the candidate on a artefact repository on the integration server, a
 
 `chmod 777 artefact-repository/`
 
-3. Create a GitLab runner (with executor "shell"") on the integration server. 
+3. Create a GitLab runner (with executor "shell") on the integration server. 
 
 *Notes:*<br>
 - Use `[integration-server] shell` for description
