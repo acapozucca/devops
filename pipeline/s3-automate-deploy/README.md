@@ -290,7 +290,7 @@ For the executor enter:<br>
 *Notes:*<br>
 - The current available runners on a GitLab instance can be found at:
 
-http://gitlab.example.com/admin/runners
+http://<i></i>gitlab.example.com/admin/runners
 
 Example: (http://192.168.33.9/gitlab/admin/runners)
 
