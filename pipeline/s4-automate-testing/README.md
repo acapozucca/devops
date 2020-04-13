@@ -293,22 +293,22 @@ To access to this settings, go to "Settings" -> "CI/CD" -> "Auto DevOps".
 
 ```
 @BeforeTest
-	public static void configureDriver() throws MalformedURLException {
-		final ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.addArguments("--headless");
-		chromeOptions.addArguments("--no-sandbox");
-		chromeOptions.addArguments("--disable-dev-shm-usage");
-		chromeOptions.addArguments("--window-size=1200x600");
+  public static void configureDriver() throws MalformedURLException {
+	final ChromeOptions chromeOptions = new ChromeOptions();
+	chromeOptions.addArguments("--headless");
+	chromeOptions.addArguments("--no-sandbox");
+	chromeOptions.addArguments("--disable-dev-shm-usage");
+	chromeOptions.addArguments("--window-size=1200x600");
 
-		chromeOptions.setBinary("/usr/bin/google-chrome");
-		DesiredCapabilities capability = DesiredCapabilities.chrome();
-		capability.setBrowserName("chrome");
-		capability.setPlatform(Platform.LINUX);
+	chromeOptions.setBinary("/usr/bin/google-chrome");
+	DesiredCapabilities capability = DesiredCapabilities.chrome();
+	capability.setBrowserName("chrome");
+	capability.setPlatform(Platform.LINUX);
 
-		capability.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+	capability.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
-		driver = new RemoteWebDriver(new URL("http://selenium__standalone-chrome:4444/wd/hub"), capability);
-	}
+	driver = new RemoteWebDriver(new URL("http://selenium__standalone-chrome:4444/wd/hub"), capability);
+ }
 
 ```
 
