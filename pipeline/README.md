@@ -30,8 +30,7 @@ Laptop with at least 8 Gb memory (recommended 16 Gb, ideally 32 Gb)
 1. [Create walking skeleton](./s1-create-skeleton/README.md)
 2. [Automate build process](./s2-automate-build/README.md)
 3. [Automate deployment process](./s3-automate-deploy/README.md)
-4. Automate Integration Tests
-5. Automate Acceptance Tests
-6. Evolve
+4. [Automate tests cases](./s4-automate-testing/README.md)
+5. Evolve
 
 
