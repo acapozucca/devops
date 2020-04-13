@@ -181,7 +181,20 @@ The expected output should be the same as in the local environment.
 
 
 
+## Next steps
 
+A more elaborated [Web-based "Hello World" example](https://github.com/acapozucca/helloworld) has been developed.
+
+This example presents the working environment from the developer viewpoint. Thus, it shows how to setup a development working environment for the tasks meant to be done when developing (i.e. coding, testing).
+
+
+
+**Exercises**:
+
+1. Analyse how the test case can be run.
+2. Analyse how the test case can be tested.
+3. Use Vagrant to create the "production environment" for this example.
+4. Use Vagrant to create the "staging environment" for this example.
 
 
 
