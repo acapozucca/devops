@@ -21,7 +21,7 @@ The objective is to deploy the candidate for the MavenHelloWorldProject (used in
 
 ### Strategy 1
 
-First deploy the candidate on a artefact repository on the integration server, and then transfer the candidate to the stage environment.
+First, deploy the candidate on a artefact repository on the integration server, and then transfer the candidate to the stage environment.
 
 1. Create directory `/home/vagrant/artefact-repository` on the integration server.
 
