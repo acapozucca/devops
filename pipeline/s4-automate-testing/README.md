@@ -14,11 +14,11 @@ The table below presents some testing frameworks for wich a detailed tutorial ha
 
 | Name | Unit  | Integration | Acceptance |  NFR | Tutorial |
 | :--- | :---: |   :---:     | :---: 	  | :---:| ---:	|
-| [TestNG](https://testng.org/doc/) | | | Y | | [Link](https://github.com/acapozucca/TestNG)|
-| [Mockito](https://site.mockito.org/) | | Y |  | Y | [Link](https://github.com/venkateshwarant/Mockito_Tutorial)|
-| [Liquibase](http://www.liquibase.org/index.html) | | Y |  | Y | [Link](https://github.com/acapozucca/liquibase)|
-| [DbUnit](http://dbunit.wikidot.com/) | | | | Y | [Link](https://github.com/venkateshwarant/DBUnit_tutorial)|
-| [Artillery](https://artillery.io/) | | | | Y | [Link](https://github.com/venkateshwarant/Artillery_Tutorial)|
+| [TestNG](https://testng.org/doc/) | | | Y | | https://github.com/acapozucca/TestNG|
+| [Mockito](https://site.mockito.org/) | | Y |  | Y | https://github.com/venkateshwarant/Mockito_Tutorial |
+| [Liquibase](http://www.liquibase.org/index.html) | | Y |  | Y | https://github.com/acapozucca/liquibase|
+| [DbUnit](http://dbunit.wikidot.com/) | | | | Y | https://github.com/venkateshwarant/DBUnit_tutorial|
+| [Artillery](https://artillery.io/) | | | | Y | https://github.com/venkateshwarant/Artillery_Tutorial|
 
 
 
