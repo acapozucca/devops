@@ -17,7 +17,7 @@ The table below presents some testing frameworks for wich a detailed tutorial ha
 | [TestNG](https://testng.org/doc/) | | | Y | | https://github.com/acapozucca/TestNG|
 | [Mockito](https://site.mockito.org/) | | Y |  | Y | https://github.com/venkateshwarant/Mockito_Tutorial |
 | [Liquibase](http://www.liquibase.org/index.html) | | Y |  | Y | https://github.com/acapozucca/liquibase|
-| [DbUnit](http://dbunit.wikidot.com/) | | | | Y | https://github.com/venkateshwarant/DBUnit_tutorial|
+| [DbUnit](http://dbunit.sourceforge.net/) | | | | Y | https://github.com/venkateshwarant/DBUnit_tutorial|
 | [Artillery](https://artillery.io/) | | | | Y | https://github.com/venkateshwarant/Artillery_Tutorial|
 
 
