@@ -191,8 +191,8 @@ This example presents the working environment from the developer viewpoint. Thus
 
 **Exercises**:
 
-1. Analyse how the test case can be run.
-2. Analyse how the test case can be tested.
+1. Analyse how this example can be run.
+2. Analyse how this example can be tested.
 3. Use Vagrant to create the "production environment" for this example.
 4. Use Vagrant to create the "staging environment" for this example.
 
