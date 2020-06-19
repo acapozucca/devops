@@ -33,13 +33,13 @@ should be triggered.
 * GitLab is used as VCS and CI, whereas Docker is used to handle the integration environments.
 
 
-**Exercises**
+**Exercise 1**
 
-* Analyse how the provisioning is done.
+* 1.a Analyse how the provisioning is done.
 
-* Is there any "qualities" being addressed by the way the provisioning is done? Justify. 
+* 1.b Is there any "qualities" being addressed by the way the provisioning is done? Justify. 
  
-* Add package "nmap" to the playbook.
+* 1.c Add package "nmap" to the playbook.
 
 
 
@@ -170,11 +170,11 @@ has to:
 
 
 
-### 5.1 [GitLab Runner](https://docs.gitlab.com/runner/) setup
+### [GitLab Runner](https://docs.gitlab.com/runner/) setup
 
 
 
-#### 5.1.1 Install Git Lab Runner
+#### Install Git Lab Runner
 
 1. Ensure you are in the directory<br>
 `~/<git_root_folder>/devops/pipeline/s2-automate-build/integration-server`
@@ -192,7 +192,7 @@ This is done by executing the following commands:
 
 
 
-#### 5.1.2 Register the Runner
+#### Register the Runner
 
 1. First of all, you need to execute the following command:
 
@@ -228,12 +228,15 @@ For the Docker image (eg. ruby:2.1) enter:<br>
 4. Finally, in GitLab change the configuration of the runner to accept jobs without TAGS.
 
 
-**Exercise** 
+**Exercise 2** 
 
-* Analyse what it can be added to the playbooks, and do it.
+* 2.a Collect the manual steps you have done up to now. 
+* 2.b List those that could be added to a playbook.
+* 2.c Add (at least) half of them to eithe a new or existent playbook.
 
 
-### 5.2 Create GitLab CI
+
+### Create GitLab CI
 
 1. Create file named .gitlab-ci.yml at the root of the repository.
 
@@ -269,18 +272,18 @@ run_app:
 
 ```
 
-**Exercise** 
+**Exercise 3** 
 
-* Use GtiLab to analyse what has just happened?<br>
+* 3.a Use GtiLab to analyse what has just happened?<br>
 **Tip:** have a look on the CI/CD -> Pipelines of the project.
 
-* Try to run again the CI and inspect the intermediate results of each stage.
+* 3.b Try to run again the CI and inspect the intermediate results of each stage.
 
-* Where is the .jar file generated as result of the build?
+* 3.c Where is the .jar file generated as result of the build?
 
 
 
-### 5.3 Storing the "binary"
+### Storing the "binary"
 
 The last step of the automatic build is to store the resulting artefact such that it 
 can be accessed by the team. 
@@ -305,9 +308,9 @@ deploy_app:
 ```
 	
 
-**Exercise**
+**Exercise 4**
  
-* Find out what is the result of this modification.<br>
+* 4.a Find out what is the result of this modification.<br>
 **Tip:** have a look on the CI/CD -> Pipelines of the project.
 
 
