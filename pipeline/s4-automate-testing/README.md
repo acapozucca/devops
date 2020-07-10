@@ -7,7 +7,7 @@
 
 There exist many testing frameworks out there. Some of them (and for a particular kind of testing) can be found in this [reference](https://medium.com/@alicealdaine/top-10-api-testing-tools-rest-soap-services-5395cb03cfa9). 
 
-Probably by the time you are reading this tutorial, new testing frameworks would have come out. However, the *kind of testing* (i.e. unit, integration, acceptance, performance, etc) a frameworks helps to fulfil must remain.
+Probably by the time you are reading this tutorial, new testing frameworks would have come out. However, the *kind of testing* (i.e. unit, integration, acceptance, performance, etc) a framework helps to fulfil must remain.
 
 The table below presents some testing frameworks for wich a detailed tutorial has been developed. These testing framework were chosen to cover different type of testings. 
 
