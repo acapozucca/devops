@@ -20,7 +20,7 @@ public class ITDummyTest {
 		
 		
 		System.out.println("\nCall 3");
-		it_myapp.method1();
+		it_myapp.method1(); 
 		
 		
 	}

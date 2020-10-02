@@ -129,21 +129,21 @@ The goal is to create and run a single integration (or acceptance test) against 
 
 `cd ~/<git_root_folder>/devops/pipeline/s1-create-skeleton/ITMavenHelloWorldProject`
 
-2- Compile the integration tests
 
-`mvn clean compile`
+2- Add file to local repository
 
-3- Package the integration tests in a .jar file
+`mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=../MavenHelloWorldProject/target/MavenHelloWorldProject-1.0-SNAPSHOT.jar`
 
-`mvn package`
+
+3- Compile and package the integration tests
+
+`mvn clean compile assembly:single`
+
 
 4- Run the integration tests into the local environment
 
-`cd scripts`
 
-
-`./run-integration-tests.sh`
-
+`java -jar target/ITMavenHelloWorldProject-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
 The expected output should be: 
 
@@ -164,7 +164,7 @@ The expected output should be:
 
 `cd ../../env-stage/`
 
-`vagrant scp ../ITMavenHelloWorldProject/target/ITMavenHelloWorldProject-1.0-SNAPSHOT.jar [id_vagrant_environment]:/home/vagrant`
+`vagrant scp ../ITMavenHelloWorldProject/target/ITMavenHelloWorldProject-1.0-SNAPSHOT-jar-with-dependencies.jar [id_vagrant_environment]:/home/vagrant`
 
 **Note:** replace [id_vagrant_environment] with the actual value.
 
@@ -175,7 +175,7 @@ The expected output should be:
 
 7- Run the integration tests in the **staging environment**
 
-`java -jar ITMavenHelloWorldProject-1.0-SNAPSHOT.jar`
+`java -jar ITMavenHelloWorldProject-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
 The expected output should be the same as in the local environment.
 
