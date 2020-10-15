@@ -6,7 +6,7 @@
 ### Software
 1. Ansible (v 2.7.5, or higher)
 * Instructions to install here: https://docs.ansible.com/
-* Check installation with the command `ansible -version`
+* Check installation with the command `ansible --version`
 
 
 ## Create integration server
