@@ -106,7 +106,7 @@ deploy:
 
 *Notes:*<br>
 - The directory `/home/vagrant/stage` is the target place to deploy the file
-- A ssh key pair has to be set among `integration-server` and `stage-vm` for vagrant user. This allows not to enter password when connecting through ssh.
+- A ssh key pair has to be set between `integration-server` and `stage-vm` for vagrant user. This allows not to enter password when connecting through ssh.
 
 5.1. Create script
 
