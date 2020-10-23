@@ -268,7 +268,7 @@ testng:
 **Notes**: 
 
 * The pipeline relies on the existence of yet another GitLab Runner tagged with label *integration*. 
-This runner exists if you have followed the instructions given in [Automate deployment process](https://github.com/acapozucca/devops/tree/master/pipeline/s3-automate-deploy)
+This runner exists if you have followed the instructions given in [Automate build process](https://github.com/acapozucca/devops/tree/master/pipeline/s2-automate-build)
 
 * The current available runners on GitLab can be found at:
 ```
