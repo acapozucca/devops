@@ -208,10 +208,10 @@ For the gitlab-ci token enter the generated token.<br>
 `Example: 85y84QhgbyaqWo38b7qg`
 
 For a description for the runner enter:<br>
-`[integration-server] my-devops-course-runner`
+`[integration-server] docker`
 
 For the gitlab-ci tags for this runner enter:<br>
-`devops-course,helloworld`
+`integration`
 
 For the executor enter:<br>
 `docker`
