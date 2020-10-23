@@ -279,17 +279,17 @@ http://192.168.33.9/gitlab/admin/runners
 3. Commit and push the modifications. This event (i.e. pushing to the remote repository) will trigger the pipeline.
 
 
-4. That's all. Now, the remote repository is configured to executed the pipeline every time a modification is pushed on it.
+4. That's all. Now, the remote repository is configured to execute the pipeline every time a modification is pushed.
 
 **Note**: if the pipeline is not automatically started, then check in the settings of the project if "Auto DevOps" is selected.
-To access to this settings, go to "Settings" -> "CI/CD" -> "Auto DevOps".
+To access to these settings, go to "Settings" -> "CI/CD" -> "Auto DevOps".
 
 
 
 ### Important remarks
 
 * The test cases being executed by the pipeline correspond to those described in [TestNG tutorial](https://github.com/acapozucca/TestNG).
-* These test cases having adapted to be executed headless. These modifications are: 
+* These test cases have been modified to execute headless. These modifications are: 
 
 ```
 @BeforeTest
