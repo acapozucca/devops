@@ -150,7 +150,7 @@ Deploy directly the candidate into the stage environment.
 
 2. Add gitlab-runner user to vagrant's group.
 
-`sudo usermod -dG vagrant gitlab-runner`
+`sudo usermod -aG vagrant gitlab-runner`
 
 
 3. Change the .gitlab-ci.yml file such that the deploy job looks like:
