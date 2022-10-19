@@ -160,7 +160,7 @@ Follow the instructions to create the remote and local repositories.
 ## Automate build
 
 The objective of this stage is to configure the GitLab project such that
-every time a developer publish a change on the remote repository, the build process is 
+every time a developer publishes a change on the remote repository, the build process is 
 automatically started. More precisely, upon detection of a change on the remote repository, GitLab
 has to:
 
