@@ -4,7 +4,6 @@
   apt:
     update_cache: yes
 
-
 - name: Safe system upgrade via aptitude.
   apt: 
     upgrade: safe
@@ -18,20 +17,18 @@
     - apt-transport-https
     - ca-certificates
     - curl
-    - gnupg2
     - software-properties-common
 
-- name:  Add Docker key to the list of trusted APT keys.
-  shell: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-  args:
-    executable: /bin/bash
-    warn: False
 
-  
-- name: Add docker to APT repo. 
-  shell: add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-  #ignore_errors: True    
+- name: Add Docker GPG apt Key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
 
+- name: Add Docker Repository
+  apt_repository:
+    repo: deb https://download.docker.com/linux/ubuntu focal stable
+    state: present
 
 - name: Update repositories cache. 
   apt:
@@ -46,6 +43,8 @@
     - docker-ce 
     - docker-ce-cli
     - containerd.io
+    - docker-buildx-plugin
+    - docker-compose-plugin
     
     
 - name: Add users to docker group. 
