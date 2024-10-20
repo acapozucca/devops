@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "ubuntu/xenial64"
+  config.vm.box = "ubuntu/jammy64"
   config.vm.hostname = "integration-server"
   
   ENV['LC_ALL']="en_US.UTF-8"
@@ -36,7 +36,7 @@ Vagrant.configure("2") do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  config.vm.network "private_network", ip: "192.168.33.9"
+  config.vm.network "private_network", ip: "192.168.56.9"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -58,7 +58,7 @@ Vagrant.configure("2") do |config|
    	  # vb.gui = true
   
      # Customize the amount of memory on the VM:
-        vb.memory = "4096"
+        vb.memory = 5 * 1024
     	vb.cpus = 4
    end
   #
@@ -71,7 +71,6 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision "shell", inline: <<-SHELL
      	sudo apt-get update
-     	sudo apt-get install --yes python
      	# apt-get install -y default-jre
   	# apt-get install -y apache2
    	SHELL
