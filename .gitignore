@@ -4,3 +4,4 @@ target/
 *.retry
 *.BK
 data/
+pipeline/s1-create-skeleton/ITMavenHelloWorldProject/.settings/org.eclipse.jdt.apt.core.prefs
