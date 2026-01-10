@@ -62,11 +62,11 @@ by
 
 and
 
-`# unicorn['port'] = 8080`
+`# puma['port'] = 8080`
 
 by
 
-`unicorn['port'] = 8088`
+`puma['port'] = 8088`
 
 
 (Don't forget to uncomment)
@@ -77,7 +77,7 @@ by
 
 `sudo gitlab-ctl reconfigure`
 
-`sudo gitlab-ctl restart unicorn`
+`sudo gitlab-ctl restart puma`
 
 `sudo gitlab-ctl restart`
 
